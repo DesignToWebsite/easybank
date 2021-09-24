@@ -51,6 +51,25 @@ h5 {
 }
 
 
+/***alert***/
+
+.alert {
+    z-index: 100;
+    margin: 0;
+    background-color: hsl(233, 26%, 24%);
+    text-align: center;
+    color: hsl(220, 16%, 96%);
+    border-radius: 0;
+}
+
+.alert a {
+    color: hsl(136, 65%, 51%);
+}
+
+
+/*****end alert***/
+
+
 /******navbar*************/
 
 #navbar-header {
@@ -77,6 +96,19 @@ ul.navbar-nav.me-auto.mb-2.mb-md-0 {
 button.btn {
     background: linear-gradient(to right, var(--primary-green), var(--primary-bright));
     border-radius: 30px;
+    padding: 5px 20px;
+    color: var(--neutral-white);
+    font-size: 15px;
+}
+
+button.btn:hover {
+    opacity: .7;
+    color: var(--neutral-white);
+}
+
+.nav-link:hover {
+    color: var(--primary-dark);
+    border-bottom: var(--primary-green) solid 4px;
 }
 
 
@@ -179,6 +211,10 @@ button.btn {
     color: var(--primary-dark);
 }
 
+.card-title:hover {
+    color: var(--primary-bright);
+}
+
 .card-text {
     font-size: 16px;
     font-weight: 400;
@@ -194,7 +230,6 @@ footer {
     background-color: var(--primary-dark);
     padding: 30px 0;
     margin: auto;
-    text-align: center;
 }
 
 footer ul {
@@ -212,6 +247,15 @@ footer ul li img {
     width: 15px;
 }
 
+footer svg {
+    margin-right: 5px;
+}
+
+footer a:hover,
+footer svg:hover path {
+    fill: var(--primary-bright);
+}
+
 .logo {
     width: 100px;
     margin-top: 20px;
@@ -220,6 +264,10 @@ footer ul li img {
 
 footer .btn {
     padding: 10px 30px;
+}
+
+footer .button-menu button.btn:hover {
+    opacity: .7;
 }
 
 
@@ -287,6 +335,10 @@ footer .btn {
         align-items: center;
         margin-bottom: 40px;
     }
+    /**footer**/
+    footer .btn {
+        padding: 10px 20px;
+    }
 }
 
 
@@ -341,5 +393,8 @@ footer .btn {
     }
     .card-img-top {
         height: 300px;
+    }
+    footer {
+        text-align: center;
     }
 }
