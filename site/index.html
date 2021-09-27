@@ -9,6 +9,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 
     <title>Frontend Mentor | Easybank landing page</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -108,7 +109,7 @@
                     <br class="d-none d-lg-block d-md-block"> Control your finances like never before.
                 </p>
             </div>
-            <div class="row">
+            <div class="row" data-aos="fade-down" data-aos-duration="3000">
                 <div class="col-lg-3 col-md-6 col-sm-6 col-12 colom">
                     <img src="images/icon-online.svg" alt="icon online">
                     <h4>Online Banking</h4>
@@ -143,7 +144,7 @@
     <div id="article">
         <div class="container">
             <h2>Latest Articles</h2>
-            <div class="row">
+            <div class="row" data-aos="fade-up" data-aos-duration="3000">
                 <div class="col-lg-3 col-md-6 col-sm-12 col-12">
                     <a href="#">
                         <div class="card">
@@ -207,7 +208,7 @@
 
     <footer class="text-sm-center text-ex-center">
         <div class="container">
-            <div class="row">
+            <div class="row" data-aos="fade-down-right" data-aos-duration="3000">
                 <div class="col-md-3 col-sm-12 col-12">
 
                     <img src="images/logo copy.svg" alt="logo" class="logo"> <br>
@@ -282,6 +283,10 @@
 
 
 
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <script src="js/bootstrap.min.js"></script>
 
 
